@@ -1,0 +1,19 @@
+<div class="col-md-12">
+	<div class="row">
+		<h2>Categoria</h2>
+	</div>
+	<br />
+	<div class="row">
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<button ng-if="template.name != 'cadastrar'" ng-click="setCadastro()" class="btn btn-primary">Cadastrar</button>
+				<button ng-if="template.name != 'listar'" ng-click="setListar()" class="btn btn-primary">Listar</button>
+			</div>
+		</div>
+
+		<div id="content-categoria" class="slide-animate-controller">
+			<div class="slide-animate" ng-include="template.url"></div>
+		</div>
+	</div>
+</div>

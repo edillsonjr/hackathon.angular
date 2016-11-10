@@ -1,0 +1,25 @@
+
+<form ng-submit="updateAgente()">
+	<div class="form-group">
+		<label for="nomeAgente">Nome</label> <input type="text"
+			class="form-control" id="nomeAgente" placeholder="Nome" required
+			ng-model="agenteEditar.nome">
+	</div>
+
+	{{agenteEditar.nome}} {{agenteEditar.cpfAgente}}
+
+	<div class="form-group">
+		<label for="cpfAgente">CPF</label> <input type="text"
+			class="form-control" id="cpfAgente" placeholder="CPF" required
+			ng-model="agenteEditar.cpfAgente">
+	</div>
+
+	<div class="form-group">
+		<label for="dtContratacao">Data de Contratacao</label>
+		<md-datepicker type="text" class="small-input " id="dtContratacao"
+			name="dtContratacao" placeholder="Data de Contratacaoo"
+			ng-model="agenteEditar.dtContratacao" required></md-datepicker>
+	</div>
+
+	<button type="submit" class="btn btn-default">Submit</button>
+</form>

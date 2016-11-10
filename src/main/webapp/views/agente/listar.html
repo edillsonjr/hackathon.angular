@@ -1,0 +1,26 @@
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>Nome</td>
+			<td>CPF</td>
+			<td>Data de Contratacao</td>
+			<td>Tempo de Servico</td>
+		
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in agentes">
+			<td>{{item.idAgente}}</td>
+			<td>{{item.nome}}</td>
+			<td>{{item.cpfAgente}}</td>
+			<td>{{item.dtContratacao}}</td>
+			
+			<td><button ng-click="setEditar($index)" class="btn btn-info btn-block">Editar</button></td>
+			
+		</tr>
+		<tr ng-show="notFound" class="text-center">
+			<td colspan="4">Não tem registros</td>
+		</tr>
+	</tbody>
+</table>
